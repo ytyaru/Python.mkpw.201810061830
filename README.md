@@ -56,6 +56,12 @@ EBDADDEB
 CAAEACCB
 ```
 
+　ターミナルのメタ文字をエスケープして字種を指定する。（`!`, `"`, `\`の3字の前にそれぞれ`\`を付与する）
+
+```bash
+$ python3 mkpw.py 8 10 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\!\"#$%&'()*+,-./:;<=>?@[\\]^_\`{|}~"
+```
+
 # 課題
 
 * ヘルプを整備する
