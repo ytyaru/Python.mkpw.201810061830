@@ -21,6 +21,10 @@ $ python2 ./src/py2.7/mkpw.py
 2|number|`10`
 3|character|```ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_\`{|}~```
 
+```
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_\`{|}~
+```
+
 ### 構文パターン
 
 ```bash
