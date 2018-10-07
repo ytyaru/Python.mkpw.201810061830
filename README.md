@@ -70,7 +70,18 @@ B. ダブルクォート
 　そこで、文字列結合によって解決する。`'ABC'` + `\'` + `'DEF'`となる。shell構文では文字結合に`+`や`&`は不要なので、省く。また、スペースを入れてしまうと次の起動引数になってしまうためスペースを含めずに書く。すると以下のようになる。
 
 ```bash
-$ python3 mkpw.py 8 10 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\!"#$%&'\''()*+,-./:;<=>?@[\\]^_\`{|}~'
+$ python3 mkpw.py 8 10 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~'
+8 10 ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+R[KOnyPo
+alp\K(9$
+tPy{o$?o
+PY*S0$]M
+\L^ZRvX)
+;.~3^.R@
+/62}|W6(
+~{yEWI8s
+"e9S^Ppk
+&(ZR.tGC
 ```
 
 ##### B. ダブルクォート
@@ -111,6 +122,12 @@ e?=B@S@\
 .}A\E}z|
 Q\&JKahM
 ```
+
+# 既知のバグ
+
+* 字の出現率が不均等になることがある
+    * 字種指定したとき同じ文字が重複するとその文字の出現率が上がる
+        * 対策: 重複文字を削除する
 
 # 課題
 
