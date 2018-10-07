@@ -23,10 +23,10 @@ def set_params():
     if 2 < len(args.params): params[2] = args.params[2]
     return params
 
-def print_password(figure, number, character):
+def PRINT_password(figure, number, character):
     for pw in make_password(figure, number, character):
-        print(pw)
+        print pw
 
 params = set_params()
-print(*params)
-print_password(*params);
+print params[0], params[1], params[2] 
+PRINT_password(*params);
